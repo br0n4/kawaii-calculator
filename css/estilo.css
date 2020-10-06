@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
+* {
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-weight: 500;
+      font-size: 25px;      
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background-color: #D8BFD8;
+}
+
+input {
+  margin: 2px;
+  border: none;
+  border-radius: 3px;
+}
+input[type=button] {
+   width: 100px;
+   height: 50px;
+   transition: ease 0.2s;
+   cursor: pointer;
+}
+
+input[type=text]{
+  width: calc(100% - 4px);
+  height: 40px;
+  text-align: center;
+}
+
+div#calculadora {
+  box-shadow: 0 0 30px 9px #FFFFF0;
+}
+
+div#calculadora div{
+  display: flex;
+}
+
+div#calculadora div input:nth-child(4){
+  background: #DCDCDC;
+}
+
+div#quarta input:nth-child(1){
+  background: #ffdab9;
+}
+
+div#quarta input:nth-child(1), div#calculadora {
+  border-bottom-left-radius: 35px;
+}
+
+div#quarta input:nth-child(3){
+  background: #B0E0E6;
+}
+
+div#quarta input:nth-child(4), div#calculadora {
+  border-bottom-right-radius: 35px;
+}
+
+input[type=button]:hover {
+  filter: brightness(90%);
+}
+
+input[type=button]:active {
+  transform: scale(0.9);
+}
